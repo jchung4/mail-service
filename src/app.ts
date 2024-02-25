@@ -7,6 +7,9 @@ dotenv.config();
 const app: Express = express();
 const port: number = 8081;
 
+
+// Environment variables for email configuration
+
 app.use(express.json());
 app.use(express.urlencoded({
 	extended: true,
