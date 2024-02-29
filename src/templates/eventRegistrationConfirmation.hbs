@@ -1,0 +1,52 @@
+<!-- templates/passwordResetTemplate.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Reset</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            /*background-color: #90e0ef; */
+            /*color: #161b33; */
+            padding: 20px;
+        }
+        .container { 
+            max-width: 600px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            background-color: #161b33; 
+            color: #90e0ef;
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .eventName { 
+            font-weight: 900; 
+            font-size: 50px; 
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100px; /* Adjust based on your logo size */
+            height: auto;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/CSCI-P465-565-Project-Group-12/mail-service/main/assets/BashBossFullLogo.png" alt="logo" title="logo" class="logo"/>
+
+        <h2>Hi {{firstName}},</h2>
+        <p>Congratulations! You have successfully registered for the event:</p>
+        <p class="eventName">{{eventName}}</p>
+        <p>Event Date: {{eventDate}}</p>
+        <p>Location: {{eventLocation}}</p>
+        <p>If you have any questions or need to make changes to your registration, please contact us.</p>
+        <p>Thank you for registering, and we look forward to seeing you there!</p>
+    </div>
+    </div>
+</body>
+</html>
